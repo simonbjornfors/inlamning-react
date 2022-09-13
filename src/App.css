@@ -4,7 +4,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 3rem;
+  width: 3rem;
   pointer-events: none;
 }
 
@@ -26,6 +27,12 @@
 }
 
 .App-link {
+  color: #61dafb;
+}
+a.App-link:hover {
+  opacity: 75%;
+}
+a:visited {
   color: #61dafb;
 }
 

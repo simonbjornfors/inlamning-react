@@ -7,9 +7,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img className="App-logo" src="logo192.png" alt="" />
         <nav>
-          <Link to="/">Home</Link> | <Link to="/About">About</Link> |{" "}
-          <Link to="/Contact">Contact</Link>
+          <Link to="/" className="App-link">
+            Home
+          </Link>{" "}
+          |{" "}
+          <Link to="/About" className="App-link">
+            About
+          </Link>{" "}
+          |{" "}
+          <Link to="/Contact" className="App-link">
+            Contact
+          </Link>
         </nav>
       </header>
       <Outlet />

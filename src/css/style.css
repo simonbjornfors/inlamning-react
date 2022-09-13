@@ -4,11 +4,81 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     font-size: calc(10px + 2vmin);
     color: white;
 }
-
+h2{
+    margin: 0;
+}
 .App-link {
     color: #61dafb;
+}
+.container{
+    border: 5px solid #61dafb;
+    flex: 1 0 auto;
+    width: 300px;
+    padding: 0.5rem;
+}
+.add-btn{
+    border: none;
+    border-radius: 5px;
+    width: 3rem;
+    height: 1.5rem;
+}
+.sub-container{
+    flex: 1 0 auto;
+}
+.hold-text{
+    text-decoration: line-through;
+    opacity: 50%;
+    font-style: italic;
+    display: inline-flex;
+} 
+.list-item{
+    display: inline-flex;
+    gap: 0.5rem;
+    flex: 1 1;
+}
+.completed-btn{
+    border: none;
+    border-radius: 5px;
+    height: 1rem;
+    font-size: .5em;
+}
+.completed-btn:hover{
+    background-color: #282c34;
+    border: 1px solid white;
+    color: white;
+}
+.delete-btn{
+    border: none;
+    border-radius: 5px;
+    height: 1rem;
+    font-size: .5em;
+}
+.delete-btn:hover{
+    background-color: #282c34;
+    border: 1px solid white;
+    color: white;
+}
+label{
+    font-size: 0.5em;
+}
+.form-subject{
+}
+.form-subject > *{
+    margin: 0 50px 5px
+}
+.form-body{
+
+}
+.form-body > *{
+    width: 95%;
+    height: auto;
+}
+.form-author{
+}
+.form-author > *{
+    margin: 0 5px 5px
 }

@@ -5,7 +5,7 @@ import { Form } from '../components';
 const Contact = () => {
     return (
         <div className='App-body'>
-            <div><Form/></div>
+            <Form />
         </div>
     );
 }

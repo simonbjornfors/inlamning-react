@@ -1,11 +1,12 @@
 import React from 'react';
+import { TodoList } from '../components';
 import "../css/style.css"
 
 const Home = () => {
-    let todoList = [];
     return (
         <div className='App-body'>
-            <h2>This is the home page</h2>
+            <h2>TodoList</h2>
+            <TodoList />
         </div>
     );
 }
