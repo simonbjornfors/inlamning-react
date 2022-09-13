@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../css/style.css"
 
-export default function UserForm() {
+const UserForm = () => {
 
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -54,3 +54,4 @@ export default function UserForm() {
     </div>
   );
 }
+export default UserForm

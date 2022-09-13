@@ -17,7 +17,7 @@ h2{
 .container{
     border: 5px solid #61dafb;
     flex: 1 0 auto;
-    width: 300px;
+    width: 70%;
     padding: 0.5rem;
 }
 .add-btn{
@@ -28,17 +28,29 @@ h2{
 }
 .sub-container{
     flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.sub-container > ul{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
 }
 .hold-text{
     text-decoration: line-through;
     opacity: 50%;
     font-style: italic;
     display: inline-flex;
+    gap: 0.5rem;
+    flex: 1 1;
 } 
 .list-item{
     display: inline-flex;
     gap: 0.5rem;
     flex: 1 1;
+    justify-self: center;
 }
 .completed-btn{
     border: none;
@@ -68,13 +80,13 @@ label{
 .form-subject{
 }
 .form-subject > *{
-    margin: 0 50px 5px
+    margin: 0 5px 5px
 }
 .form-body{
-
+    
 }
 .form-body > *{
-    width: 95%;
+    width: 99%;
     height: auto;
 }
 .form-author{

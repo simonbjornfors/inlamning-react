@@ -9,9 +9,6 @@ const TodoList = () => {
     const handleChange = (e) => {
         setTask(e.target.value)
     }
-    const handleSubmit = (e) => {
-        e.preventDefault()
-      }
 
     const AddTask = () => {
         console.log(task)
@@ -46,32 +43,30 @@ const TodoList = () => {
 
     return (
         <div className='container'>
-            <form onSubmit={handleSubmit}>
-                <input 
-                    type="text" 
-                    id="text" 
-                    placeholder="Add task..." 
-                    onChange={(e) => handleChange(e)}
-                    />
-                <button className="add-btn" onClick={AddTask}>Add</button>
-                <div className='sub-container'>
-                    {taskList !== [] ? 
-                        <ul>
-                            {taskList.map((item) => {
-                                return(
-                                    <li key={item.id} className={item.isCompleted ? "hold-text" : 'list-item'}>
-                                        {item.value}
-                                        <div>
-                                            <button className='completed-btn' onClick={(e) => completedTask(e, item.id)}>Completed</button>
-                                            <button className='delete-btn' onClick={(e) => deleteTask(e, item.id)}>Delete</button>
-                                        </div>
-                                    </li>)
-                                })
-                            }
-                        </ul> 
-                        : null}
-                </div>
-            </form>
+            <input 
+                type="text" 
+                id="text" 
+                placeholder="Add task..." 
+                onChange={(e) => handleChange(e)}
+                />
+            <button className="add-btn" onClick={AddTask}>Add</button>
+            <div className='sub-container'>
+                {taskList !== [] ? 
+                    <ul>
+                        {taskList.map((item) => {
+                            return(
+                                <li key={item.id} className={item.isCompleted ? "hold-text" : 'list-item'}>
+                                    {item.value}
+                                    <div>
+                                        <button className='completed-btn' onClick={(e) => completedTask(e, item.id)}>Completed</button>
+                                        <button className='delete-btn' onClick={(e) => deleteTask(e, item.id)}>Delete</button>
+                                    </div>
+                                </li>)
+                            })
+                        }
+                    </ul> 
+                    : null}
+            </div>
         </div>
     );
 }
